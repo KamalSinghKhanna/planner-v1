@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg-primary: #020617;
+  --bg-secondary: #0f1729;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @apply bg-[#020617] text-white min-h-screen font-sans;
+}
+
+main {
+  @apply min-h-screen;
+}

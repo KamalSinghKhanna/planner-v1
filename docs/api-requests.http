@@ -1,0 +1,34 @@
+### Today Checklist
+GET http://localhost:3000/api/today
+Authorization: Bearer {{USER_ID}}
+
+### Toggle Habit Completion
+PATCH http://localhost:3000/api/today
+Content-Type: application/json
+Authorization: Bearer {{USER_ID}}
+
+{
+  "habitName": "Meditate",
+  "completed": true,
+  "notes": "Quick morning sit"
+}
+
+### Goals Overview
+GET http://localhost:3000/api/goals?days=14
+Authorization: Bearer {{USER_ID}}
+
+### Weekly Plan Input
+GET http://localhost:3000/api/week?hoursPerDay=3&historyDays=10
+Authorization: Bearer {{USER_ID}}
+
+### Weekly Review
+GET http://localhost:3000/api/week/review?weekStart=2025-01-06
+Authorization: Bearer {{USER_ID}}
+
+### Sign In (placeholder)
+POST http://localhost:3000/api/auth/signin
+Content-Type: application/json
+
+{
+  "email": "you@example.com"
+}
